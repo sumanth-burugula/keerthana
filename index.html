@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, Keerthana Kona</title>
+    <meta
+      name="description"
+      content="A sweet birthday surprise website for Keerthana Kona filled with love, hearts, and memories."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <div class="floating-heart heart-1">♥</div>
+    <div class="floating-heart heart-2">♥</div>
+    <div class="floating-heart heart-3">♥</div>
+    <div class="sparkle sparkle-1">✦</div>
+    <div class="sparkle sparkle-2">✦</div>
+    <div class="sparkle sparkle-3">✦</div>
+
+    <div id="giftGate" class="gift-gate">
+      <div class="gift-box">
+        <div class="gift-sparkles">
+          <span>✨</span>
+          <span>💖</span>
+          <span>✨</span>
+        </div>
+        <div class="gift-wrap" aria-hidden="true">
+          <div class="gift-lid"></div>
+          <div class="gift-base"></div>
+        </div>
+        <div class="teddy-bear">🧸</div>
+        <p class="gift-title">You received a surprise gift 🎁</p>
+        <p class="gift-text">Would you like to open it?</p>
+        <div class="gift-actions">
+          <button id="openGiftBtn" class="btn primary">Yes, open it!</button>
+          <button id="rejectGiftBtn" class="btn secondary">Nope!</button>
+        </div>
+        <div id="giftResult" class="gift-result" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <div id="revealOverlay" class="reveal-overlay hidden" aria-hidden="true">
+      <div class="reveal-heart">💖</div>
+      <div class="reveal-teddy">🧸</div>
+      <div class="reveal-text">Open it... and let the magic begin ✨</div>
+    </div>
+
+    <div id="birthdayPopup" class="birthday-popup hidden" aria-live="polite">
+      <p>Happy Birthday, Keerthana Kona!</p>
+    </div>
+
+    <div id="pageContent" class="page-content hidden">
+      <audio autoplay loop volume="0.6">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <div class="lyric-card">
+        <p>"I love you forever, and ever, and ever..."</p>
+      </div>
+
+      <main class="container">
+        <section class="hero card">
+          <div class="section-spotlight"></div>
+          <p class="eyebrow">A little midnight surprise for</p>
+          <h1>Happy Birthday, Keerthana Kona</h1>
+          <p class="hero-text">
+            My sweetest wish for you today, tonight, and always. You make life feel softer, brighter, and more beautiful.
+          </p>
+          <div class="hero-actions">
+            <a href="#memories" class="btn primary">Open the surprise</a>
+            <a href="#message" class="btn secondary">Read the note</a>
+          </div>
+        </section>
+
+        <section id="message" class="message card">
+          <div class="section-heading">
+            <p class="eyebrow">A note from your favorite person</p>
+            <h2>My love for you is endless</h2>
+          </div>
+          <p>
+            Keerthana, on 18th March 2023, our story began — and little did we know, it would bloom into something so beautiful. From our India trip and those unforgettable memories to the moments in August and September when we both realized what was quietly growing between us, everything felt like fate stepping into our lives.
+          </p>
+          <p>
+            Since then, my world has changed, and you became the sweetest, brightest part of it. Thank you for staying in my life through every twist, every storm, every little chaos. I’ll always be the one to hold your hand, carry your worries, and stand by you through everything — even the tiny troubles you somehow manage to bring with you. So yes, be thankful, because you’ve got someone who will always choose you, forever.
+          </p>
+          <p class="signature">With all my love, always ♥</p>
+        </section>
+
+        <section id="memories" class="gallery card">
+          <div class="section-heading">
+            <p class="eyebrow">Our cutest memories</p>
+            <h2>Some of our favorite pictures together</h2>
+          </div>
+          <div class="gallery-grid">
+            <article class="photo-card">
+              <img src="pictures/DSC04854.JPG" alt="A lovely photo of us together" loading="lazy" />
+              <h3>First Traditional Event</h3>
+              <p>The first little spark that turned into something unforgettable.</p>
+            </article>
+            <article class="photo-card">
+              <img src="pictures/IMG_9019.JPG" alt="A beautiful couple moment" loading="lazy" />
+              <h3>First temple together</h3>
+              <p>These little moments are the ones I treasure the most.</p>
+            </article>
+            <article class="photo-card">
+              <img src="pictures/IMG_7473 - Copy.JPG" alt="A cute picture of us" loading="lazy" />
+              <h3>First Birthday Together</h3>
+              <p>Because being with you makes every day feel extra special.</p>
+            </article>
+            <article class="photo-card">
+              <img src="pictures/IMG_3034.JPG" alt="A lovely candid photo" loading="lazy" />
+              <h3>First event in love </h3>
+              <p>Even the quiet times with you feel like a love song.</p>
+            </article>
+            <article class="photo-card">
+              <img src="pictures/IMG_3804.JPG" alt="A warm and happy photo of us" loading="lazy" />
+              <h3>First date</h3>
+              <p>Your smile turns ordinary days into something magical.</p>
+            </article>
+            <article class="photo-card">
+              <img src="pictures/IMG_4330.JPG" alt="A graceful photo of us together" loading="lazy" />
+              <h3>Golden memories</h3>
+              <p>Some memories stay in your heart forever.</p>
+            </article>
+            <article class="photo-card">
+              <img src="pictures/IMG_5717.JPG" alt="A happy picture of us" loading="lazy" />
+              <h3>My favorite event</h3>
+              <p>Your smile is still the most beautiful thing I know.</p>
+            </article>
+            <article class="photo-card">
+              <img src="pictures/IMG_2527 - Copy (2).JPG" alt="A romantic photo of us" loading="lazy" />
+              <h3>First Picture</h3>
+              <p>For you, always — in every season, every dream, every lifetime.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="midnight card">
+          <p class="eyebrow">At 12:00 AM</p>
+          <h2>Here is your tiny birthday wish</h2>
+          <p>
+            May your day be full of soft laughter, sweet surprises, and a heart that feels loved from every direction.
+            I hope this little website brings a smile to your face before your day even begins.
+          </p>
+        </section>
+
+        <section class="final-card card">
+          <div class="heart-float heart-float-1">💗</div>
+          <div class="heart-float heart-float-2">💖</div>
+          <div class="heart-float heart-float-3">💕</div>
+          <p class="eyebrow">Forever and always</p>
+          <h2>I love you forever, Keerthana</h2>
+          <p>
+            No matter how many birthdays come and go, my love for you will stay as warm, wild, and beautiful as ever. You are my favorite person, my sweetest memory, and the one I will always choose — through every laugh, every challenge, and every beautiful moment still to come. This love is forever, and so am I.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
